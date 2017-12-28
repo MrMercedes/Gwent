@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">伊欧菲斯：冥想</string>
+
+    <string name="text_initialdata">初始数值:</string>
+    <string name="text_resultsdata">结果:</string>
+    <string name="text_attacker">攻击者 </string>
+    <string name="text_Defender">防御者 </string>
+
+    <string name="text_attack">战力:</string>
+    <string name="text_armor">护甲:</string>
+
+    <string name="text_attack_left">战力剩余:</string>
+    <string name="text_armor_left">护甲剩余:</string>
+
+    <string name="text_gains">收益:</string>
+    <string name="text_enemyagainstenemy">敌对敌:</string>
+    <string name="text_friendlyagainstenemy">我对敌:</string>
+    
+    <string name="btn_calculate">计算</string>
+    <string name="btn_clear">  清除  </string>
+    
+    <string name="Iorveth">+2(伊欧菲斯:冥想)</string>
+    <string name="more_than_one_enemy">计算多个单位</string>
+    <string name="add_enemy">添加单位</string>
+
+
+    <string name="toast_toomany_cards">大兄弟，放不了那么多牌啊</string>
+
+
+    <string name="more_enemy">输入多个数据</string>
+    <string name="text_max_gains">最大收益：</string>
+
+    <string name="text_attacker_best"> 最优攻击者:</string>
+    <string name="text_Defender_best">最优防御者:</string>
+
+    <string name="text_attacker_best_left"> 战力剩余:</string>
+    <string name="text_Defender_best_left">战力剩余:</string>
+    <string name="toast_input_null">输入不能为空</string>
+    <string name="toast_error_format">请输入正确的格式</string>
+    <string name="error">计算错误</string>
+    <string name="text_input_format">输入格式：单位用空格分割, 有护甲添加至逗号之后, 无护甲则省略。</string>
+    <string name="hint_suck_as">15 17 20,3 25 28</string>
+</resources>

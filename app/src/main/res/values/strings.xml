@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Iorveth:Meditation</string>
+
+    <string name="text_initialdata">The initial data:</string>
+    <string name="text_resultsdata">The result:</string>
+    <string name="text_attacker">Attacker </string>
+    <string name="text_Defender">Defender </string>
+
+    <string name="text_attack">Strength:</string>
+    <string name="text_armor">Armor:</string>
+
+    <string name="text_attack_left">Strength left:</string>
+    <string name="text_armor_left">Armor left:</string>
+
+    <string name="text_gains">Gains:</string>
+    <string name="text_enemyagainstenemy">Enemy against enemy:</string>
+    <string name="text_friendlyagainstenemy">Friend against enemy:</string>
+
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_clear">  Clear  </string>
+
+    <string name="Iorveth">+2(Iorveth:Meditation)</string>
+
+
+    <string name="more_than_one_enemy">More Than One Enemy</string>
+    <string name="add_enemy">Add enemy</string>
+
+    <string name="more_enemy">In put more than one enemy</string>
+    <string name="text_max_gains">Max Gains :</string>
+
+    <string name="text_attacker_best"> BestAttacker:</string>
+    <string name="text_Defender_best">BestDefender:</string>
+
+    <string name="text_attacker_best_left"> Attack left:</string>
+    <string name="text_Defender_best_left">Defend left:</string>
+    <string name="toast_input_null">Input cannot be empty</string>
+    <string name="toast_error_format">Please enter the correct format</string>
+    <string name="error">Calculation error</string>
+    <string name="text_input_format">Input format:The unit is divided between the Spaces, the armor is added after the comma, no armor can be omitted.</string>
+    <string name="hint_suck_as">15 17 20,3 25 28</string>
+    <string name="toast_toomany_cards">Big brother, you can\'t put so many CARDS</string>
+</resources>

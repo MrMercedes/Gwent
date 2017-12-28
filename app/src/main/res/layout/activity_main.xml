@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aglais_gwent"
+    tools:context="com.example.hp0331.gwent.MainActivity">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+
+        android:text="@string/text_initialdata"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="40dp">
+      <TextView
+          android:text="@string/text_attacker"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:textColor="@android:color/white"
+
+          android:gravity="center_vertical"
+          android:layout_height="match_parent"/>
+      <TextView
+          android:text="@string/text_attack"
+          android:layout_weight="1"
+          android:textColor="@android:color/white"
+
+          android:layout_width="0dp"
+          android:layout_gravity="center_vertical"
+          android:layout_height="wrap_content"/>
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:id="@+id/me_attacker_attacker"
+          android:inputType="number"
+          android:layout_weight="1"
+          app:met_hideUnderline="true"
+          app:met_baseColor="@android:color/white"
+
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+      <TextView
+          android:text="@string/text_armor"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:textColor="@android:color/white"
+
+          android:gravity="center"
+          android:layout_height="wrap_content"/>
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:id="@+id/me_attacker_armor"
+          android:inputType="number"
+          app:met_hideUnderline="true"
+          android:layout_weight="1"
+          app:met_baseColor="@android:color/white"
+
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/text_Defender"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/text_attack"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/me_defender_attack"
+            android:inputType="number"
+            android:layout_weight="1"
+            app:met_baseColor="@android:color/white"
+
+            android:layout_width="0dp"
+            app:met_hideUnderline="true"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/text_armor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/me_defender_armor"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:met_baseColor="@android:color/white"
+
+            app:met_hideUnderline="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_alignParentLeft="true"
+                android:text="@string/btn_calculate"
+                android:textColor="@android:color/white"
+
+                android:background="#0171BB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:text="@string/btn_clear"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:background="#0171BB"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="@string/text_resultsdata"
+            android:textColor="@android:color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/text_attacker"
+            android:textColor="@android:color/white"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="@string/text_attack"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/me_attacker_attacker_left"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:layout_height="40dp"/>
+        <TextView
+            android:text="@string/text_armor"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/me_attacker_armor_left"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/text_Defender"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/text_attack"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/me_defender_attack_left"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:text="@string/text_armor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/me_defender_armor_left"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <TextView
+        android:text="@string/text_gains"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+
+        android:gravity="center_vertical"
+        android:layout_height="40dp"/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/text_enemyagainstenemy"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textColor="@android:color/white"
+
+        android:gravity="center_vertical"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/tv_gainsevse"
+        android:layout_width="0dp"
+        android:textColor="@android:color/white"
+
+        android:textSize="18dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:textColor="@android:color/white"
+
+        android:layout_weight="2"
+        android:text="@string/Iorveth"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/text_friendlyagainstenemy"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@android:color/white"
+
+            android:gravity="center_vertical"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_gainsfvse"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:text="@string/Iorveth"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_more"
+            android:text="@string/more_than_one_enemy"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+
+            android:layout_centerInParent="true"
+            android:background="#0171BB"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

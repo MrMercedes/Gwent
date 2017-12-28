@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_more"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/webwxgetmsgimg"
+    tools:context="com.example.hp0331.gwent.MoreEnemyActivity">
+    <TextView
+        android:text="@string/more_enemy"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical"
+        android:layout_height="40dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/me_inputstring"
+        android:layout_width="match_parent"
+        android:hint="@string/hint_suck_as"
+        app:met_baseColor="@android:color/white"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_max_gains"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/max_gains"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:gravity="center|left"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@android:color/white"
+
+            android:text="@string/Iorveth"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_attacker_best"
+            android:textColor="@android:color/white"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/attacker_attack_best"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:text="@string/text_Defender_best"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/Defender_defence_best"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_attacker_best_left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/attacker_attack_best_left"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:text="@string/text_Defender_best_left"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/Defender_defence_best_left"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_calculate_best"
+            android:text="@string/btn_calculate"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:background="#0171BB"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <TextView
+        android:text="@string/text_input_format"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_clear"
+            android:text="@string/btn_clear"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:background="#0171BB"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
